@@ -25,10 +25,10 @@ export function AboutTeaser() {
               About Appmatix Solutions
             </span>
             <h2 className="mt-5 text-4xl md:text-5xl lg:text-6xl font-display font-semibold leading-tight">
-              A studio built by engineers, run for <span className="text-gradient">founders</span>.
+              A software company built by engineers, run for <span className="text-gradient">founders</span>.
             </h2>
             <p className="mt-6 text-lg text-muted-foreground leading-relaxed">
-              Appmatix Solutions is a small, senior team that's been shipping software for over a decade. We started after one too many bad agency experiences — and built the studio we wished existed.
+              Appmatix Solutions is a full-service software company specializing in custom web applications, mobile applications, and end-to-end software services. Our mission is to help businesses innovate, grow, and streamline their operations through reliable, scalable, and user-friendly digital solutions.
             </p>
             <p className="mt-4 text-muted-foreground leading-relaxed">
               No offshore handoffs. No bait-and-switch. Just a tight team that takes ownership of your product and treats deadlines like promises.

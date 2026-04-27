@@ -52,7 +52,7 @@ export function Navbar() {
                 Appmatix Solutions
               </span>
               <span className="mt-1 text-[0.6rem] font-mono uppercase tracking-[0.18em] text-muted-foreground/70 hidden sm:block">
-                Software Studio
+                Software Solutions
               </span>
             </span>
           </Link>

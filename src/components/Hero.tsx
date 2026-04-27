@@ -28,7 +28,7 @@ export function Hero() {
             >
               <span className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full glass text-sm">
                 <Sparkles className="h-3.5 w-3.5 text-primary" />
-                <span className="text-foreground/90">Software studio for ambitious SMBs</span>
+                <span className="text-foreground/90">Full-service software solutions company</span>
               </span>
             </motion.div>
 
