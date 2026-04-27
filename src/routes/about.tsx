@@ -8,7 +8,7 @@ import { Compass, Heart, Lightbulb, Target } from "lucide-react";
 export const Route = createFileRoute("/about")({
   head: () => ({
     meta: [
-      { title: "About — Appmatix" },
+      { title: "About — Appmatix Solutions" },
       { name: "description", content: "Meet the senior team behind Appmatix Solutions — engineers and designers building software that lasts." },
       { property: "og:title", content: "About Appmatix Solutions" },
       { property: "og:description", content: "A studio built by engineers, run for founders." },

@@ -29,7 +29,7 @@ export const Route = createRootRoute({
       { name: "viewport", content: "width=device-width, initial-scale=1" },
       { title: "Appmatix Solutions — Software studio for ambitious SMBs" },
       { name: "description", content: "We build web apps, mobile experiences, and automation systems engineered by a senior team and shipped on a predictable timeline." },
-      { name: "author", content: "Appmatix" },
+      { name: "author", content: "Appmatix Solutions" },
       { property: "og:title", content: "Appmatix Solutions — Software that moves businesses forward" },
       { property: "og:description", content: "Web, mobile, and automation engineered by a senior team. Predictable, transparent, and built to scale." },
       { property: "og:type", content: "website" },
