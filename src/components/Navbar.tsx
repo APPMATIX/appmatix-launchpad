@@ -49,7 +49,7 @@ export function Navbar() {
             </span>
             <span className="flex flex-col leading-none">
               <span className="text-[1.35rem] font-display font-semibold tracking-tight bg-gradient-to-r from-foreground to-foreground/80 bg-clip-text text-transparent">
-                Appmatix
+                Appmatix Solutions
               </span>
               <span className="mt-1 text-[0.6rem] font-mono uppercase tracking-[0.18em] text-muted-foreground/70 hidden sm:block">
                 Software Studio
