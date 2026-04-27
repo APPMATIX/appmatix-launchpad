@@ -1,5 +1,5 @@
 import { Link } from "@tanstack/react-router";
-import { Github, Linkedin, Twitter, Mail } from "lucide-react";
+import { Instagram, Linkedin, Facebook, Mail } from "lucide-react";
 import logo from "@/assets/logo.png";
 
 export function Footer() {
@@ -16,7 +16,7 @@ export function Footer() {
               We design and ship software that moves businesses forward — web apps, mobile experiences, and automation systems engineered by a senior team.
             </p>
             <div className="flex items-center gap-3 mt-6">
-              {[Twitter, Linkedin, Github, Mail].map((Icon, i) => (
+              {[Instagram, Linkedin, Facebook, Mail].map((Icon, i) => (
                 <a
                   key={i}
                   href="#"
