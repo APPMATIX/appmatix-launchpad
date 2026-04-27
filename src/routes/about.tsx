@@ -24,6 +24,12 @@ const values = [
   { icon: Target, title: "Ship outcomes", desc: "Code is a means, not an end. We measure success by your business results." },
 ];
 
+const founders = [
+  { name: "Kebin B Jacob", role: "Co-Founder · Former IT Business Analyst" },
+  { name: "Nandakishore C V", role: "Co-Founder · Former Software Engineer" },
+  { name: "Rohith K", role: "Co-Founder · Former Software Engineer" },
+];
+
 function AboutPage() {
   return (
     <PageLayout>
