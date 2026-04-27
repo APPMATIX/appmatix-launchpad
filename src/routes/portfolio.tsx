@@ -10,7 +10,7 @@ export const Route = createFileRoute("/portfolio")({
       { title: "Portfolio — Appmatix" },
       { name: "description", content: "A selection of products we've shipped — web platforms, mobile apps, and automation systems." },
       { property: "og:title", content: "Portfolio — Appmatix" },
-      { property: "og:description", content: "Selected work from the Appmatix studio." },
+      { property: "og:description", content: "Selected work from the Appmatix Solutions team." },
     ],
   }),
   component: PortfolioPage,

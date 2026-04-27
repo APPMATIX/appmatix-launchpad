@@ -62,7 +62,7 @@ export function Footer() {
 
         <div className="mt-12 pt-6 border-t border-border/60 flex flex-col md:flex-row items-center justify-between gap-4">
           <p className="text-sm text-muted-foreground">
-            © {new Date().getFullYear()} Appmatix Studio. All rights reserved.
+            © {new Date().getFullYear()} Appmatix Solutions. All rights reserved.
           </p>
           <p className="text-xs text-muted-foreground tracking-wider uppercase">
             Built with care · Engineered to scale

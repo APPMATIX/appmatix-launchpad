@@ -7,8 +7,8 @@ export const Route = createFileRoute("/contact")({
     meta: [
       { title: "Contact — Appmatix" },
       { name: "description", content: "Tell us about your project. We respond within one business day." },
-      { property: "og:title", content: "Contact Appmatix" },
-      { property: "og:description", content: "Start a project with the Appmatix studio. We respond within one business day." },
+      { property: "og:title", content: "Contact Appmatix Solutions" },
+      { property: "og:description", content: "Start a project with the Appmatix Solutions team. We respond within one business day." },
     ],
   }),
   component: ContactPage,

@@ -9,8 +9,8 @@ export const Route = createFileRoute("/about")({
   head: () => ({
     meta: [
       { title: "About — Appmatix" },
-      { name: "description", content: "Meet the senior team behind Appmatix — engineers and designers building software that lasts." },
-      { property: "og:title", content: "About Appmatix" },
+      { name: "description", content: "Meet the senior team behind Appmatix Solutions — engineers and designers building software that lasts." },
+      { property: "og:title", content: "About Appmatix Solutions" },
       { property: "og:description", content: "A studio built by engineers, run for founders." },
     ],
   }),
@@ -30,7 +30,7 @@ function AboutPage() {
       <PageHero
         eyebrow="About us"
         title={<>A small team with <span className="text-gradient">big standards</span>.</>}
-        description="Appmatix was founded in 2019 by a group of senior engineers who'd seen too many software projects fail. We set out to build the agency we wished existed — and we've been quietly delivering ever since."
+        description="Appmatix Solutions was founded in 2019 by a group of senior engineers who'd seen too many software projects fail. We set out to build the agency we wished existed — and we've been quietly delivering ever since."
       />
 
       <section className="py-20">
