@@ -1,5 +1,5 @@
 import { motion } from "framer-motion";
-import { Code2, Smartphone, Workflow, Palette, type LucideIcon } from "lucide-react";
+import { Code2, Smartphone, Database, RefreshCw, type LucideIcon } from "lucide-react";
 import { SectionHeader } from "./Section";
 
 type Service = {
@@ -12,27 +12,27 @@ type Service = {
 export const services: Service[] = [
   {
     icon: Code2,
-    title: "Web Development",
-    desc: "Production-grade web applications built on modern, type-safe stacks that scale with your business.",
-    bullets: ["React / Next / TanStack", "Performance-first", "SEO & accessibility"],
+    title: "Website Development",
+    desc: "Custom responsive websites and e-commerce platforms built with modern technologies and best practices.",
+    bullets: ["Responsive & SEO-ready", "E-commerce platforms", "Modern type-safe stacks"],
   },
   {
     icon: Smartphone,
-    title: "Mobile Apps",
-    desc: "Native-feel iOS and Android apps that users love — from MVP to App Store launch.",
-    bullets: ["React Native & Expo", "Offline-first sync", "Push & deep links"],
+    title: "Mobile Application",
+    desc: "Native and cross-platform iOS / Android apps designed for exceptional user experience and performance.",
+    bullets: ["Native iOS & Android", "Cross-platform builds", "App Store launch support"],
   },
   {
-    icon: Workflow,
-    title: "Business Automation",
-    desc: "Eliminate manual work with custom internal tools, integrations, and AI-assisted workflows.",
-    bullets: ["API integrations", "Workflow engines", "AI copilots"],
+    icon: Database,
+    title: "ERP / CRM Solutions",
+    desc: "Business management and workflow automation systems to streamline operations and boost productivity.",
+    bullets: ["Workflow automation", "Custom dashboards", "Integrations & APIs"],
   },
   {
-    icon: Palette,
-    title: "UI / UX Design",
-    desc: "Interface design that feels effortless — research-led, brand-aligned, and conversion-focused.",
-    bullets: ["Design systems", "User research", "Prototyping"],
+    icon: RefreshCw,
+    title: "Application Modernisation",
+    desc: "Re-platform legacy systems into reliable, scalable, and user-friendly digital solutions.",
+    bullets: ["Legacy migrations", "Cloud-native rebuilds", "Performance & security"],
   },
 ];
 
@@ -43,7 +43,7 @@ export function ServicesGrid({ withHeader = true }: { withHeader?: boolean }) {
         {withHeader && (
           <SectionHeader
             eyebrow="What we do"
-            title={<>A full studio. <span className="text-gradient">One partner.</span></>}
+            title={<>A full software company. <span className="text-gradient">One partner.</span></>}
             description="Four disciplines, tightly integrated. We embed with your team and own the outcome end-to-end."
           />
         )}

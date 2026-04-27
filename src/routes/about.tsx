@@ -11,7 +11,7 @@ export const Route = createFileRoute("/about")({
       { title: "About — Appmatix Solutions" },
       { name: "description", content: "Meet the senior team behind Appmatix Solutions — engineers and designers building software that lasts." },
       { property: "og:title", content: "About Appmatix Solutions" },
-      { property: "og:description", content: "A studio built by engineers, run for founders." },
+      { property: "og:description", content: "A software company built by engineers, run for founders." },
     ],
   }),
   component: AboutPage,
@@ -30,7 +30,7 @@ function AboutPage() {
       <PageHero
         eyebrow="About us"
         title={<>A small team with <span className="text-gradient">big standards</span>.</>}
-        description="Appmatix Solutions was founded in 2019 by a group of senior engineers who'd seen too many software projects fail. We set out to build the agency we wished existed — and we've been quietly delivering ever since."
+        description="Appmatix Solutions is a full-service software company founded by engineers and operators. We build reliable, scalable, and user-friendly digital products that help businesses innovate, grow, and streamline their operations."
       />
 
       <section className="py-20">

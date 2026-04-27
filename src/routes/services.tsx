@@ -11,7 +11,7 @@ export const Route = createFileRoute("/services")({
       { title: "Services — Appmatix Solutions" },
       { name: "description", content: "Web development, mobile apps, business automation, and UI/UX design — engineered by a senior team." },
       { property: "og:title", content: "Services — Appmatix Solutions" },
-      { property: "og:description", content: "A full software studio in one partner. Web, mobile, automation, and design." },
+      { property: "og:description", content: "Web, mobile, ERP/CRM, and application modernisation — one company, end-to-end." },
     ],
   }),
   component: ServicesPage,
