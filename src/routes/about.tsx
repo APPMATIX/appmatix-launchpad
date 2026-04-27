@@ -24,12 +24,6 @@ const values = [
   { icon: Target, title: "Ship outcomes", desc: "Code is a means, not an end. We measure success by your business results." },
 ];
 
-const founders = [
-  { name: "Kebin B Jacob", role: "Co-Founder · Former IT Business Analyst" },
-  { name: "Nandakishore C V", role: "Co-Founder · Former Software Engineer" },
-  { name: "Rohith K", role: "Co-Founder · Former Software Engineer" },
-];
-
 function AboutPage() {
   return (
     <PageLayout>
@@ -81,31 +75,6 @@ function AboutPage() {
         </div>
       </section>
 
-      <section className="py-20">
-        <div className="container mx-auto px-4 md:px-8">
-          <h2 className="text-4xl md:text-5xl font-display font-semibold text-center max-w-2xl mx-auto">
-            Meet the <span className="text-gradient">founders</span>.
-          </h2>
-          <div className="mt-14 grid md:grid-cols-3 gap-5 max-w-4xl mx-auto">
-            {founders.map((f, i) => (
-              <motion.div
-                key={f.name}
-                initial={{ opacity: 0, y: 20 }}
-                whileInView={{ opacity: 1, y: 0 }}
-                viewport={{ once: true }}
-                transition={{ duration: 0.5, delay: i * 0.08 }}
-                className="glass rounded-2xl p-6 text-center"
-              >
-                <div className="mx-auto h-16 w-16 rounded-full bg-gradient-to-br from-primary/30 to-secondary/20 flex items-center justify-center text-xl font-display font-semibold text-primary">
-                  {f.name.split(" ").map((n) => n[0]).join("").slice(0, 2)}
-                </div>
-                <h3 className="mt-4 text-lg font-display font-semibold">{f.name}</h3>
-                <p className="mt-1 text-sm text-muted-foreground">{f.role}</p>
-              </motion.div>
-            ))}
-          </div>
-        </div>
-      </section>
 
       <Testimonials />
       <CTABanner />
