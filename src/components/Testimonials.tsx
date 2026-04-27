@@ -5,12 +5,12 @@ import { SectionHeader } from "./Section";
 
 const testimonials = [
   {
-    quote: "Appmatix shipped our MVP in eight weeks — pixel-perfect, fully tested, and on budget. They're now an extension of our product team.",
+    quote: "Appmatix Solutions shipped our MVP in eight weeks — pixel-perfect, fully tested, and on budget. They're now an extension of our product team.",
     name: "Sarah Chen",
     role: "Founder & CEO, Lumen Health",
   },
   {
-    quote: "We've worked with five agencies over a decade. Appmatix is the first that delivered exactly what they promised, exactly when they said they would.",
+    quote: "We've worked with five agencies over a decade. Appmatix Solutions is the first that delivered exactly what they promised, exactly when they said they would.",
     name: "Marcus Webb",
     role: "VP Engineering, Northwind Logistics",
   },

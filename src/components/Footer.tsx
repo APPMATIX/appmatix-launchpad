@@ -9,8 +9,8 @@ export function Footer() {
         <div className="grid md:grid-cols-4 gap-10">
           <div className="md:col-span-2">
             <Link to="/" className="flex items-center gap-2.5">
-              <img src={logo} alt="Appmatix" className="h-10 w-10" />
-              <span className="text-2xl font-display font-semibold">Appmatix</span>
+              <img src={logo} alt="Appmatix Solutions" className="h-10 w-10" />
+              <span className="text-2xl font-display font-semibold">Appmatix Solutions</span>
             </Link>
             <p className="mt-4 text-muted-foreground max-w-md leading-relaxed">
               We design and ship software that moves businesses forward — web apps, mobile experiences, and automation systems engineered by a senior team.
@@ -62,7 +62,7 @@ export function Footer() {
 
         <div className="mt-12 pt-6 border-t border-border/60 flex flex-col md:flex-row items-center justify-between gap-4">
           <p className="text-sm text-muted-foreground">
-            © {new Date().getFullYear()} Appmatix Studio. All rights reserved.
+            © {new Date().getFullYear()} Appmatix Solutions. All rights reserved.
           </p>
           <p className="text-xs text-muted-foreground tracking-wider uppercase">
             Built with care · Engineered to scale

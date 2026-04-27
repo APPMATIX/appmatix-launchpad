@@ -22,13 +22,13 @@ export function AboutTeaser() {
           >
             <span className="inline-flex items-center gap-2 px-3 py-1 rounded-full glass text-xs font-medium tracking-wider uppercase text-primary">
               <span className="h-1.5 w-1.5 rounded-full bg-primary" />
-              About Appmatix
+              About Appmatix Solutions
             </span>
             <h2 className="mt-5 text-4xl md:text-5xl lg:text-6xl font-display font-semibold leading-tight">
               A studio built by engineers, run for <span className="text-gradient">founders</span>.
             </h2>
             <p className="mt-6 text-lg text-muted-foreground leading-relaxed">
-              Appmatix is a small, senior team that's been shipping software for over a decade. We started after one too many bad agency experiences — and built the studio we wished existed.
+              Appmatix Solutions is a small, senior team that's been shipping software for over a decade. We started after one too many bad agency experiences — and built the studio we wished existed.
             </p>
             <p className="mt-4 text-muted-foreground leading-relaxed">
               No offshore handoffs. No bait-and-switch. Just a tight team that takes ownership of your product and treats deadlines like promises.

@@ -38,7 +38,7 @@ export function Navbar() {
             scrolled ? "glass shadow-lg" : ""
           }`}
         >
-          <Link to="/" className="flex items-center gap-2.5 group" aria-label="Appmatix — home">
+          <Link to="/" className="flex items-center gap-2.5 group" aria-label="Appmatix Solutions — home">
             <span className="relative flex items-center justify-center h-10 w-10 rounded-xl bg-gradient-to-br from-primary/15 to-secondary/10 ring-1 ring-primary/20 transition-all duration-500 group-hover:ring-primary/50 group-hover:shadow-[0_0_24px_-4px_oklch(0.7_0.16_232/0.6)]">
               <span className="absolute inset-0 rounded-xl bg-primary/20 blur-md opacity-0 group-hover:opacity-100 transition-opacity duration-500" />
               <img
@@ -49,7 +49,7 @@ export function Navbar() {
             </span>
             <span className="flex flex-col leading-none">
               <span className="text-[1.35rem] font-display font-semibold tracking-tight bg-gradient-to-r from-foreground to-foreground/80 bg-clip-text text-transparent">
-                Appmatix
+                Appmatix Solutions
               </span>
               <span className="mt-1 text-[0.6rem] font-mono uppercase tracking-[0.18em] text-muted-foreground/70 hidden sm:block">
                 Software Studio

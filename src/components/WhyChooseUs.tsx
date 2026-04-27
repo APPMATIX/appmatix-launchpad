@@ -16,7 +16,7 @@ export function WhyChooseUs() {
     <section className="py-24 md:py-32 relative">
       <div className="container mx-auto px-4 md:px-8">
         <SectionHeader
-          eyebrow="Why Appmatix"
+          eyebrow="Why Appmatix Solutions"
           title={<>The agency you wish you'd <span className="text-gradient">hired sooner</span>.</>}
           description="We exist because most software shops over-promise, under-deliver, and disappear. We do the opposite."
         />

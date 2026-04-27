@@ -5,10 +5,10 @@ import { ContactSection } from "@/components/ContactSection";
 export const Route = createFileRoute("/contact")({
   head: () => ({
     meta: [
-      { title: "Contact — Appmatix" },
+      { title: "Contact — Appmatix Solutions" },
       { name: "description", content: "Tell us about your project. We respond within one business day." },
-      { property: "og:title", content: "Contact Appmatix" },
-      { property: "og:description", content: "Start a project with the Appmatix studio. We respond within one business day." },
+      { property: "og:title", content: "Contact Appmatix Solutions" },
+      { property: "og:description", content: "Start a project with the Appmatix Solutions team. We respond within one business day." },
     ],
   }),
   component: ContactPage,

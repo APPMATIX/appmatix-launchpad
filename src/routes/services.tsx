@@ -8,9 +8,9 @@ import { CTABanner } from "@/components/CTABanner";
 export const Route = createFileRoute("/services")({
   head: () => ({
     meta: [
-      { title: "Services — Appmatix" },
+      { title: "Services — Appmatix Solutions" },
       { name: "description", content: "Web development, mobile apps, business automation, and UI/UX design — engineered by a senior team." },
-      { property: "og:title", content: "Services — Appmatix" },
+      { property: "og:title", content: "Services — Appmatix Solutions" },
       { property: "og:description", content: "A full software studio in one partner. Web, mobile, automation, and design." },
     ],
   }),

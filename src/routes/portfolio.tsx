@@ -7,10 +7,10 @@ import { Testimonials } from "@/components/Testimonials";
 export const Route = createFileRoute("/portfolio")({
   head: () => ({
     meta: [
-      { title: "Portfolio — Appmatix" },
+      { title: "Portfolio — Appmatix Solutions" },
       { name: "description", content: "A selection of products we've shipped — web platforms, mobile apps, and automation systems." },
-      { property: "og:title", content: "Portfolio — Appmatix" },
-      { property: "og:description", content: "Selected work from the Appmatix studio." },
+      { property: "og:title", content: "Portfolio — Appmatix Solutions" },
+      { property: "og:description", content: "Selected work from the Appmatix Solutions team." },
     ],
   }),
   component: PortfolioPage,
