@@ -17,7 +17,7 @@ export type PortfolioItem = {
 export const products: PortfolioItem[] = [
   {
     title: "B2B Order Manager",
-    tag: "Web",
+    tag: "Web Application",
     desc: "Wholesale invoice generation and B2B customer management — order workflow, inventory, CRM, invoicing, and sales analytics in one place.",
     color: "from-teal-500/30 to-emerald-500/10",
     year: "2026",
