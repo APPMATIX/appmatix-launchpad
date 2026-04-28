@@ -1,6 +1,7 @@
 import { motion } from "framer-motion";
 import { ArrowUpRight } from "lucide-react";
 import { SectionHeader } from "./Section";
+import orderManagerDashboard from "@/assets/order-manager-dashboard.png";
 
 export type PortfolioItem = {
   title: string;
@@ -10,17 +11,19 @@ export type PortfolioItem = {
   year: string;
   href: string;
   category: "Product" | "Service";
+  image?: string;
 };
 
 export const products: PortfolioItem[] = [
   {
     title: "B2B Order Manager",
-    tag: "Wholesale Platform",
+    tag: "Web",
     desc: "Wholesale invoice generation and B2B customer management — order workflow, inventory, CRM, invoicing, and sales analytics in one place.",
     color: "from-teal-500/30 to-emerald-500/10",
     year: "2026",
     href: "https://ordermanager.appmatixsolutions.com/login",
     category: "Product",
+    image: orderManagerDashboard,
   },
 ];
 
