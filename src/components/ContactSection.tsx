@@ -2,7 +2,9 @@ import { useState, type FormEvent } from "react";
 import { motion } from "framer-motion";
 import { Mail, MapPin, Phone, Send, CheckCircle2 } from "lucide-react";
 import { toast } from "sonner";
+import { useServerFn } from "@tanstack/react-start";
 import { SectionHeader } from "./Section";
+import { submitLead } from "@/server/leads.functions";
 
 const services = ["Web Development", "Mobile Apps", "Business Automation", "UI/UX Design", "Not sure yet"];
 const budgets = ["< $10k", "$10k – $25k", "$25k – $75k", "$75k – $150k", "$150k+"];
@@ -10,6 +12,7 @@ const budgets = ["< $10k", "$10k – $25k", "$25k – $75k", "$75k – $150k", "
 export function ContactSection() {
   const [submitted, setSubmitted] = useState(false);
   const [loading, setLoading] = useState(false);
+  const submitLeadFn = useServerFn(submitLead);
 
   const handleSubmit = async (e: FormEvent<HTMLFormElement>) => {
     e.preventDefault();
@@ -17,6 +20,9 @@ export function ContactSection() {
     const data = new FormData(form);
     const name = String(data.get("name") || "").trim();
     const email = String(data.get("email") || "").trim();
+    const company = String(data.get("company") || "").trim();
+    const service = String(data.get("service") || "").trim();
+    const budget = String(data.get("budget") || "").trim();
     const message = String(data.get("message") || "").trim();
 
     if (!name || name.length > 100) return toast.error("Please enter your name");
@@ -25,11 +31,23 @@ export function ContactSection() {
     if (message.length > 2000) return toast.error("Message is too long");
 
     setLoading(true);
-    await new Promise((r) => setTimeout(r, 800));
-    setLoading(false);
-    setSubmitted(true);
-    toast.success("Message sent! We'll be in touch within one business day.");
-    form.reset();
+    try {
+      const result = await submitLeadFn({
+        data: { name, email, company, service, budget, message },
+      });
+      if (!result.ok) {
+        toast.error(result.error ?? "Something went wrong. Please try again.");
+        return;
+      }
+      setSubmitted(true);
+      toast.success("Message sent! We'll be in touch within one business day.");
+      form.reset();
+    } catch (err) {
+      console.error(err);
+      toast.error("Network error. Please try again.");
+    } finally {
+      setLoading(false);
+    }
   };
 
   return (
