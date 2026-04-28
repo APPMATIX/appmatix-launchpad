@@ -45,16 +45,26 @@ function Card({ p, i }: { p: PortfolioItem; i: number }) {
     >
       <div className={`relative h-48 bg-gradient-to-br ${p.color} overflow-hidden`}>
         <div className="absolute inset-0 grid-pattern opacity-50" />
-        <div className="absolute inset-0 flex items-center justify-center">
-          <span className="text-6xl font-display font-bold text-foreground/10">
-            {p.title.charAt(0)}
-          </span>
-        </div>
+        {p.image ? (
+          <img
+            src={p.image}
+            alt={`${p.title} preview`}
+            loading="lazy"
+            className="absolute inset-0 h-full w-full object-cover object-top transition-transform duration-500 group-hover:scale-105"
+          />
+        ) : (
+          <div className="absolute inset-0 flex items-center justify-center">
+            <span className="text-6xl font-display font-bold text-foreground/10">
+              {p.title.charAt(0)}
+            </span>
+          </div>
+        )}
+        <div className="absolute inset-0 bg-gradient-to-t from-background/40 to-transparent" />
         <div className="absolute top-4 left-4 flex items-center gap-2">
-          <span className="text-xs font-mono uppercase tracking-wider px-2.5 py-1 rounded-full bg-background/60 backdrop-blur text-foreground/90">
+          <span className="text-xs font-mono uppercase tracking-wider px-2.5 py-1 rounded-full bg-background/70 backdrop-blur text-foreground/90">
             {p.tag}
           </span>
-          <span className="text-xs font-mono text-foreground/70">{p.year}</span>
+          <span className="text-xs font-mono text-foreground/80 px-2 py-1 rounded-full bg-background/60 backdrop-blur">{p.year}</span>
         </div>
       </div>
       <div className="p-6">
