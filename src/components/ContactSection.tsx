@@ -50,9 +50,19 @@ export function ContactSection() {
             className="lg:col-span-2 space-y-4"
           >
             {[
-              { icon: Mail, label: "Email", value: "hello@appmatix.com" },
-              { icon: Phone, label: "Phone", value: "+1 (415) 555-0123" },
-              { icon: MapPin, label: "Location", value: "Remote · Worldwide" },
+              { icon: Mail, label: "Email", value: "info@appmatixsolutions.com" },
+              { 
+                icon: Phone, 
+                label: "Phone", 
+                value: (
+                  <span className="whitespace-pre-line">
+                    +91 9544248794{"\n"}
+                    +91 8848012893{"\n"}
+                    +971 588355652
+                  </span>
+                ) 
+              },
+              { icon: MapPin, label: "Location", value: "Kochi · Dubai" },
             ].map((c) => (
               <div key={c.label} className="glass rounded-2xl p-6 flex items-start gap-4">
                 <div className="h-11 w-11 rounded-xl bg-primary/15 text-primary flex items-center justify-center flex-shrink-0">
