@@ -53,9 +53,13 @@ export function Footer() {
               Get in touch
             </h4>
             <ul className="space-y-3 text-foreground/80">
-              <li>hello@appmatix.com</li>
-              <li>+1 (415) 555-0123</li>
-              <li>Remote · Worldwide</li>
+              <li>info@appmatixsolutions.com</li>
+              <li className="whitespace-pre-line">
+                +91 9544248794{"\n"}
+                +91 8848012893{"\n"}
+                +971 588355652
+              </li>
+              <li>Kochi · Dubai</li>
             </ul>
           </div>
         </div>
