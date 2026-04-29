@@ -2,9 +2,8 @@ import { useState, type FormEvent } from "react";
 import { motion } from "framer-motion";
 import { Mail, MapPin, Phone, Send, CheckCircle2 } from "lucide-react";
 import { toast } from "sonner";
-import { useServerFn } from "@tanstack/react-start";
 import { SectionHeader } from "./Section";
-import { submitLead } from "@/server/leads.functions";
+import { supabase } from "@/integrations/supabase/client";
 
 const services = ["Web Development", "Mobile Apps", "Business Automation", "UI/UX Design", "Not sure yet"];
 const budgets = ["< $10k", "$10k – $25k", "$25k – $75k", "$75k – $150k", "$150k+"];
