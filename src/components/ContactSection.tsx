@@ -11,7 +11,6 @@ const budgets = ["< $10k", "$10k – $25k", "$25k – $75k", "$75k – $150k", "
 export function ContactSection() {
   const [submitted, setSubmitted] = useState(false);
   const [loading, setLoading] = useState(false);
-  const submitLeadFn = useServerFn(submitLead);
 
   const handleSubmit = async (e: FormEvent<HTMLFormElement>) => {
     e.preventDefault();
@@ -31,11 +30,19 @@ export function ContactSection() {
 
     setLoading(true);
     try {
-      const result = await submitLeadFn({
-        data: { name, email, company, service, budget, message },
+      const { error } = await supabase.from("leads").insert({
+        name,
+        email,
+        company: company || null,
+        service: service || null,
+        budget: budget || null,
+        message,
+        source: "contact_form",
+        user_agent: typeof navigator !== "undefined" ? navigator.userAgent.slice(0, 500) : null,
       });
-      if (!result.ok) {
-        toast.error(result.error ?? "Something went wrong. Please try again.");
+      if (error) {
+        console.error(error);
+        toast.error("Something went wrong. Please try again.");
         return;
       }
       setSubmitted(true);
