@@ -3,7 +3,7 @@ import { motion } from "framer-motion";
 import { Mail, MapPin, Phone, Send, CheckCircle2 } from "lucide-react";
 import { toast } from "sonner";
 import { SectionHeader } from "./Section";
-import { supabase } from "@/integrations/supabase/client";
+import { leadsSupabase } from "@/lib/leads-supabase";
 
 const services = ["Web Development", "Mobile Apps", "Business Automation", "UI/UX Design", "Not sure yet"];
 const budgets = ["< $10k", "$10k – $25k", "$25k – $75k", "$75k – $150k", "$150k+"];
@@ -30,7 +30,7 @@ export function ContactSection() {
 
     setLoading(true);
     try {
-      const { error } = await supabase.from("leads").insert({
+      const { error } = await leadsSupabase.from("leads").insert({
         name,
         email,
         company: company || null,
