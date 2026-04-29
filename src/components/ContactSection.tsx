@@ -30,7 +30,7 @@ export function ContactSection() {
 
     setLoading(true);
     try {
-      const { error } = await supabase.from("leads").insert({
+      const { error } = await leadsSupabase.from("leads").insert({
         name,
         email,
         company: company || null,
