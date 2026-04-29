@@ -2,7 +2,7 @@ import { motion } from "framer-motion";
 import { ArrowUpRight } from "lucide-react";
 import { SectionHeader } from "./Section";
 import orderManagerDashboard from "@/assets/order-manager-dashboard.png";
-
+import VISAMATE from "@/assets/VISA-MATE.png";
 export type PortfolioItem = {
   title: string;
   tag: string;
@@ -24,6 +24,17 @@ export const products: PortfolioItem[] = [
     href: "https://ordermanager.appmatixsolutions.com/login",
     category: "Product",
     image: orderManagerDashboard,
+  },
+  {
+    title: "Visa Mate | Expat Concierge ",
+    tag: "Web Application",
+    desc: "SUMMARIZE ABOUT VISA MATE Exploring browser context Reading: VisaMate | Expat Concierge VisaMate (identified as  Expat Concierge ) is a comprehensive digital platform designed to assist expatriates, particularly those targeting the UAE market. ",
+    color: "from-teal-500/30 to-emerald-500/10",
+    year: "2026",
+    href: "https://visamate.appmatixsolutions.com/dashboard",
+
+    category: "Product",
+    image: VISAMATE ,
   },
 ];
 

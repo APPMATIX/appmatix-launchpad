@@ -6,7 +6,7 @@ import logo from "@/assets/logo.png";
 
 export function Hero() {
   return (
-    <section className="relative min-h-screen flex items-center overflow-hidden pt-32 pb-20">
+    <section className="relative min-h-screen flex items-center overflow-hidden pt-20 md:pt-32 pb-20">
       <div
         className="absolute inset-0 -z-10 opacity-60"
         style={{
@@ -80,7 +80,7 @@ export function Hero() {
               initial={{ opacity: 0 }}
               animate={{ opacity: 1 }}
               transition={{ duration: 0.8, delay: 0.6 }}
-              className="mt-14 flex flex-wrap items-center gap-x-8 gap-y-3 text-xs tracking-widest uppercase text-muted-foreground font-mono"
+              className="mt-14 flex flex-wrap items-center gap-x-4 md:gap-x-8 gap-y-3 text-xs tracking-widest uppercase text-muted-foreground font-mono"
             >
               <span>Trusted by SMBs worldwide</span>
               <span className="h-1 w-1 rounded-full bg-muted-foreground/40" />
@@ -99,7 +99,7 @@ export function Hero() {
             transition={{ duration: 1, delay: 0.3 }}
             className="lg:col-span-5 relative flex items-center justify-center"
           >
-            <div className="relative w-[420px] h-[420px] max-w-full">
+            <div className="relative w-64 h-64 md:w-96 md:h-96 lg:w-[420px] lg:h-[420px] max-w-full">
               <motion.div
                 animate={{ rotate: 360 }}
                 transition={{ duration: 40, repeat: Infinity, ease: "linear" }}
