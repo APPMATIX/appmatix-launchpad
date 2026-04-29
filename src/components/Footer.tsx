@@ -16,10 +16,18 @@ export function Footer() {
               We design and ship software that moves businesses forward — web apps, mobile experiences, and automation systems engineered by a senior team.
             </p>
             <div className="flex items-center gap-3 mt-6">
-              {[Instagram, Linkedin, Facebook, Mail].map((Icon, i) => (
+              {[
+                { Icon: Instagram, href: "https://www.instagram.com/appmatix_solutions?igsh=MTh0dXBzOHRhMWVsbw==", label: "Instagram" },
+                { Icon: Linkedin, href: "https://www.linkedin.com/company/appmatix-solutions/", label: "LinkedIn" },
+                { Icon: Facebook, href: "https://www.facebook.com/share/1Do3tCCYBF/", label: "Facebook" },
+                { Icon: Mail, href: "mailto:info@appmatixsolutions.com", label: "Email" },
+              ].map(({ Icon, href, label }) => (
                 <a
-                  key={i}
-                  href="#"
+                  key={label}
+                  href={href}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  aria-label={label}
                   className="h-10 w-10 rounded-full glass flex items-center justify-center text-muted-foreground hover:text-primary hover:border-primary/40 transition-all"
                 >
                   <Icon className="h-4 w-4" />
