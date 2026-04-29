@@ -2,9 +2,8 @@ import { useState, type FormEvent } from "react";
 import { motion } from "framer-motion";
 import { Mail, MapPin, Phone, Send, CheckCircle2 } from "lucide-react";
 import { toast } from "sonner";
-import { useServerFn } from "@tanstack/react-start";
 import { SectionHeader } from "./Section";
-import { submitLead } from "@/server/leads.functions";
+import { supabase } from "@/integrations/supabase/client";
 
 const services = ["Web Development", "Mobile Apps", "Business Automation", "UI/UX Design", "Not sure yet"];
 const budgets = ["< $10k", "$10k – $25k", "$25k – $75k", "$75k – $150k", "$150k+"];
@@ -12,7 +11,6 @@ const budgets = ["< $10k", "$10k – $25k", "$25k – $75k", "$75k – $150k", "
 export function ContactSection() {
   const [submitted, setSubmitted] = useState(false);
   const [loading, setLoading] = useState(false);
-  const submitLeadFn = useServerFn(submitLead);
 
   const handleSubmit = async (e: FormEvent<HTMLFormElement>) => {
     e.preventDefault();
@@ -32,11 +30,19 @@ export function ContactSection() {
 
     setLoading(true);
     try {
-      const result = await submitLeadFn({
-        data: { name, email, company, service, budget, message },
+      const { error } = await supabase.from("leads").insert({
+        name,
+        email,
+        company: company || null,
+        service: service || null,
+        budget: budget || null,
+        message,
+        source: "contact_form",
+        user_agent: typeof navigator !== "undefined" ? navigator.userAgent.slice(0, 500) : null,
       });
-      if (!result.ok) {
-        toast.error(result.error ?? "Something went wrong. Please try again.");
+      if (error) {
+        console.error(error);
+        toast.error("Something went wrong. Please try again.");
         return;
       }
       setSubmitted(true);
