@@ -28,7 +28,7 @@ export const products: PortfolioItem[] = [
   {
     title: "Visa Mate | Expat Concierge ",
     tag: "Web Application",
-    desc: "SUMMARIZE ABOUT VISA MATE Exploring browser context Reading: VisaMate | Expat Concierge VisaMate (identified as  Expat Concierge ) is a comprehensive digital platform designed to assist expatriates, particularly those targeting the UAE market. ",
+    desc: "VisaMate (identified as  Expat Concierge ) is a comprehensive digital platform designed to assist expatriates, particularly those targeting the UAE market. ",
     color: "from-teal-500/30 to-emerald-500/10",
     year: "2026",
     href: "https://visamate.appmatixsolutions.com/dashboard",
